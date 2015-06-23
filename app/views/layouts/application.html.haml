@@ -1,0 +1,51 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title App
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .row
+      .large-4.large-push-8.columns.text-right
+        %ul.small-block-grid-3
+          %li
+            %a(href="#")
+              Home
+          %li
+            %a(href="#")
+              About Us
+          %li
+            %a(href="#")
+              Contact Us
+    = yield
+    #footer
+      %footer.footer
+        .row.full-width
+          .small-12.medium-3.large-4.columns
+            %i.fi-laptop
+            %p
+              some text
+          .small-12.medium-3.large-4.columns
+            %i.fi-html5
+            %p
+              some text
+          .small-6.medium-3.large-2.columns
+            %h4 Work With Me
+            %ul.footer-links
+              %li
+                %a{:href => "#"} What I Do
+              %li
+                %a{:href => "#"} Pricing
+              %li
+              %ul
+          .small-6.medium-3.large-2.columns
+            %h4 Follow Me
+            %ul.footer-links
+              %li
+                %a{:href => "#"} GitHub
+              %li
+                %a{:href => "#"} Facebook
+              %li
+              %ul

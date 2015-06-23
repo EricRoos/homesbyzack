@@ -1,0 +1,5 @@
+rake assets:clean
+rm -rf public/assets/*
+rake assets:precompile
+rake tmp:cache:clear
+sudo service unicorn restart

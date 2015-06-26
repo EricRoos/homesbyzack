@@ -51302,3 +51302,223 @@ Processing by PostsController#index as HTML
   [1m[35mPost Load (0.9ms)[0m  SELECT `posts`.* FROM `posts`  ORDER BY created_at DESC
   Rendered posts/index.html.haml within layouts/application (4.4ms)
 Completed 200 OK in 285ms (Views: 281.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-26 14:27:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (9.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (5.4ms)
+  [1m[35mUser Load (1.9ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 4475ms (Views: 4456.1ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-a4777c1acac0a74340755725342901a54ed000955bf6f5320491b8b2514c86ec.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation/foundation.self-ee5396739ce46beb039f26ea629172a74143752d74f703c6c3b219fc52aecf73.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.self-d55abdcb0a7a29512be2f31f63d418cc8cc4505a0a3c71946d25484b0a0b3f4e.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.self-fbde7afb61e8ffd8ab9b717f0bed1e58cb9e0144a25cc773fea634d5554f62cd.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.self-c9ee29909e266373e5e814a73fc6ea062245ddd29466d35d232448f73350d78a.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.self-7aa743bf4660deb2fb2f601c112806a1703c430067531da3f41e4afffe19fee9.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.self-0a5271728699423f583dd5b3b8a11bfe0dc9fb5044446bcf3218ef8ca906a82d.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.self-a50193f172f11e57b373c3001072ba2d6b34b857ab251e9ded30af5242855687.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.self-75bffd0c7f4f0d2992ab95f0cc6959282ebb5807da70123d40c01d76e230ec88.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.self-f8d30eb1717c874db26723f9e07901ec0a325d59263f1404ee83a616bb597ad2.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.self-95f01feb3e25e47b58b78da0021ae2fffafdee70846682067c180e0e10f7b095.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.self-8911a7352cb577b6b7973b0734d57d2b624c79286558ffa36fcac0c29b2d0bee.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.self-9bf6791513d1b20e213bb1aee3df0bc17128c7e18421258dc68a2a4ccabe1647.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.self-834156796c253580629cfffc720bdc3d191b1e5a5a6ddbc1102ecd08c876516c.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.self-105416f061562f07c6a0a8057d68282fdc1eeb5dc306713fcae6c9a53001fc55.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/foundation.self-abe4ee7a105042f73b12b1f1a28788522d2f253445a475a94ab4d6e1f7b0ec52.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/slick.js/slick/slick.self-06e2ebb4baf618185258b4d5ee540f41d69c1e2fdf6906bc044e5478bbb5dd41.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/trumbowyg/dist/trumbowyg.min.self-be02fd1f0b4e48fafecea97e2e021c9ee69d85e993b75d375b7d22b35cc9f342.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/application.self-3f236054623d7285a76d64c2eb27bb2b2278905023008ee2c3c0333857b6184f.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/vendor/modernizr.self-74da3245def7569da28115667be6a85a2ad97464abe707c9829c46d8975597bc.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:51 -0500
+
+
+Started GET "/assets/textlogo-2225089391f9612fa837ca6e16fb67aca85237f438f4d663ede4338c79e7fc4d.png" for 127.0.0.1 at 2015-06-26 14:27:53 -0500
+
+
+Started GET "/assets/logo-1bf5853aeae67ee0e14ab8613a0f1de2133ba83f5663fe597bba67ea24e295e3.png" for 127.0.0.1 at 2015-06-26 14:27:53 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:55 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/assets/foundation/foundation.abide.self-f8b56c707a79139807305a5f7efc2aaa0848f0c677abcc056496f507e0192b79.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:55 -0500
+
+
+Started GET "/assets/application.self-ab011501cc531654c1db0aac9d9f3a23b09e87bf27ffd54454eaf44210716098.css?body=1" for 127.0.0.1 at 2015-06-26 14:27:55 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.self-54610737b435a97590fcb176848c3c7a44c4d55d369894260fa7c28c97a70a23.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:55 -0500
+
+
+Started GET "/assets/trumbowyg/dist/ui/trumbowyg.min.css" for 127.0.0.1 at 2015-06-26 14:27:55 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.self-dad8415355087cb21a16fa44bac20d602344d52de5aca9e588e3588fce5dd5a7.js?body=1" for 127.0.0.1 at 2015-06-26 14:27:55 -0500
+
+
+Started GET "/assets/fontawesome-webfont-aadc3580d2b64ff5a7e6f1425587db4e8b033efcbf8f5c332ca52a5ed580c87c.woff2?v=4.3.0" for 127.0.0.1 at 2015-06-26 14:27:55 -0500
+
+
+Started GET "/assets/slick-26726bac4060abb1226e6ceebc1336e84930fe7a7af1b3895a109d067f5b5dcc.woff" for 127.0.0.1 at 2015-06-26 14:27:55 -0500
+
+
+Started GET "/assets/ajax-loader-e7b44c86b050fca766a96ddac2d0932af0126da6f2305280342d909168dcce6b.gif" for 127.0.0.1 at 2015-06-26 14:27:55 -0500
+
+
+Started GET "/" for 127.0.0.1 at 2015-06-26 14:28:26 -0500
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (7.5ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 200 OK in 4146ms (Views: 4131.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/jquery/dist/jquery.self-a4777c1acac0a74340755725342901a54ed000955bf6f5320491b8b2514c86ec.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/application.self-c58dc8f1b303b0397f68392a8e4d21f971b6c31068adae97ca3264dfad08f769.css?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.self-ee5396739ce46beb039f26ea629172a74143752d74f703c6c3b219fc52aecf73.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.accordion.self-d55abdcb0a7a29512be2f31f63d418cc8cc4505a0a3c71946d25484b0a0b3f4e.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.alert.self-fbde7afb61e8ffd8ab9b717f0bed1e58cb9e0144a25cc773fea634d5554f62cd.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.dropdown.self-c9ee29909e266373e5e814a73fc6ea062245ddd29466d35d232448f73350d78a.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.equalizer.self-7aa743bf4660deb2fb2f601c112806a1703c430067531da3f41e4afffe19fee9.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.joyride.self-0a5271728699423f583dd5b3b8a11bfe0dc9fb5044446bcf3218ef8ca906a82d.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.abide.self-f8b56c707a79139807305a5f7efc2aaa0848f0c677abcc056496f507e0192b79.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.magellan.self-a50193f172f11e57b373c3001072ba2d6b34b857ab251e9ded30af5242855687.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.clearing.self-54610737b435a97590fcb176848c3c7a44c4d55d369894260fa7c28c97a70a23.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.offcanvas.self-75bffd0c7f4f0d2992ab95f0cc6959282ebb5807da70123d40c01d76e230ec88.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.interchange.self-dad8415355087cb21a16fa44bac20d602344d52de5aca9e588e3588fce5dd5a7.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.reveal.self-95f01feb3e25e47b58b78da0021ae2fffafdee70846682067c180e0e10f7b095.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/trumbowyg/dist/ui/trumbowyg.min.css" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.tab.self-9bf6791513d1b20e213bb1aee3df0bc17128c7e18421258dc68a2a4ccabe1647.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.orbit.self-f8d30eb1717c874db26723f9e07901ec0a325d59263f1404ee83a616bb597ad2.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.topbar.self-105416f061562f07c6a0a8057d68282fdc1eeb5dc306713fcae6c9a53001fc55.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.slider.self-8911a7352cb577b6b7973b0734d57d2b624c79286558ffa36fcac0c29b2d0bee.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation.self-abe4ee7a105042f73b12b1f1a28788522d2f253445a475a94ab4d6e1f7b0ec52.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/foundation/foundation.tooltip.self-834156796c253580629cfffc720bdc3d191b1e5a5a6ddbc1102ecd08c876516c.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/slick.js/slick/slick.self-06e2ebb4baf618185258b4d5ee540f41d69c1e2fdf6906bc044e5478bbb5dd41.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/trumbowyg/dist/trumbowyg.min.self-be02fd1f0b4e48fafecea97e2e021c9ee69d85e993b75d375b7d22b35cc9f342.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/vendor/modernizr.self-74da3245def7569da28115667be6a85a2ad97464abe707c9829c46d8975597bc.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/application.self-3f236054623d7285a76d64c2eb27bb2b2278905023008ee2c3c0333857b6184f.js?body=1" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/textlogo-2225089391f9612fa837ca6e16fb67aca85237f438f4d663ede4338c79e7fc4d.png" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/logo-1bf5853aeae67ee0e14ab8613a0f1de2133ba83f5663fe597bba67ea24e295e3.png" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/fontawesome-webfont-aadc3580d2b64ff5a7e6f1425587db4e8b033efcbf8f5c332ca52a5ed580c87c.woff2?v=4.3.0" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/slick-26726bac4060abb1226e6ceebc1336e84930fe7a7af1b3895a109d067f5b5dcc.woff" for 127.0.0.1 at 2015-06-26 14:28:30 -0500
+
+
+Started GET "/assets/ajax-loader-e7b44c86b050fca766a96ddac2d0932af0126da6f2305280342d909168dcce6b.gif" for 127.0.0.1 at 2015-06-26 14:28:30 -0500

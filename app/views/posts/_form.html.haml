@@ -1,0 +1,25 @@
+:javascript
+  $(document).ready(function(){
+    $("#post_content").trumbowyg();
+  });
+= form_for @post do |f|
+  - if @post.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@post.errors.count, "error")} prohibited this post from being saved:"
+      %ul
+        - @post.errors.full_messages.each do |msg|
+          %li= msg
+  .row
+    .large-4.columns
+      .field
+        = f.label :title
+        = f.text_field :title
+  .row
+    .large-12.columns
+      .field
+        = f.label :content
+        = f.text_area :content
+  .row
+    .large-1.large-centered.columns
+      .actions
+        = f.submit 'Save'

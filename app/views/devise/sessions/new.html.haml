@@ -1,0 +1,34 @@
+.row
+  .large-12.columns
+    %h2 Log in
+
+= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+  .row
+    .large-4.large-centered.columns
+      .field
+        = f.label :email
+  .row
+    .large-4.large-centered.columns
+      .field
+        = f.email_field :email, autofocus: true
+  .row
+    .large-4.large-centered.columns
+      .field
+        = f.label :password
+  .row
+    .large-4.large-centered.columns
+      .field
+        = f.password_field :password, autocomplete: "off"
+
+  - if devise_mapping.rememberable?
+    .row
+      .large-4.large-centered.columns
+        .field
+          = f.check_box :remember_me
+          = f.label :remember_me
+  .row
+    .large-4.large-centered.columns
+      .field
+        .actions
+          = f.submit "Log in", class: "button expand"
+= render "devise/shared/links"

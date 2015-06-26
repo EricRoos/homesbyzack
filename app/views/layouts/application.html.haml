@@ -2,50 +2,71 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title App
+    %title Praxis Homes: By Zack
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag "vendor/modernizr"
     = csrf_meta_tags
   %body
-    .row
-      .large-4.large-push-8.columns.text-right
-        %ul.small-block-grid-3
+    .row.topBar
+      .large-6.medium-5.small-8.columns.text-center
+        = link_to root_path do
+          = image_tag "textlogo.png", class: "top-logo"
+
+      .medium-7.small-6.large-6.columns.text-right.navSection.show-for-medium-up
+        %ul.nav
+          %li.navItem
+            =link_to "Blog",posts_path 
+          %li.navItem
+            Services
+          %li.navItem
+            About Us
+          %li.navItem
+            Contact Us
+      .small-4.columns.show-for-small-only.smallNav
+        %a.dropdownIcon{"aria-controls" => "drop1", "aria-expanded" => "false", "data-dropdown" => "drop1"}
+          = fa_icon "navicon lg"
+        %ul#drop1.f-dropdown{"aria-hidden" => "true", "data-dropdown-content" => "", :tabindex => "-1"}
           %li
-            %a(href="#")
-              Home
+            %a{:href => "#"} Blog
           %li
-            %a(href="#")
-              About Us
+            %a{:href => "#"} Services
           %li
-            %a(href="#")
-              Contact Us
+            %a{:href => "#"} About Us
+          %li
+            %a{:href => "#"} Contact Us
+
     = yield
-    #footer
-      %footer.footer
-        .row.full-width
-          .small-12.medium-3.large-4.columns
-            %i.fi-laptop
-            %p
-              some text
-          .small-12.medium-3.large-4.columns
-            %i.fi-html5
-            %p
-              some text
-          .small-6.medium-3.large-2.columns
-            %h4 Work With Me
-            %ul.footer-links
+    %footer.row
+      .large-12.columns
+        .row
+          .large-4.columns.text-center
+            %h4 Connect with us:
+            %ul
+              %li= fa_icon "facebook 2x fw"
+              %li= fa_icon "twitter 2x fw"
+              %br
+              %li= fa_icon "pinterest 2x fw"
+              %li= fa_icon "instagram 2x fw"
+          .large-4.columns.text-center
+            %p 
+              =image_tag "logo.png"
+            %p 
+              Phone: +1 (903) 641-1510<br/>
+              Email: zack@praxishomestx.com
+          .large-4.columns.text-center
+            %h4 Navigation
+            %ul.nav
               %li
-                %a{:href => "#"} What I Do
+                Home
               %li
-                %a{:href => "#"} Pricing
+                Blog Archive
               %li
-              %ul
-          .small-6.medium-3.large-2.columns
-            %h4 Follow Me
-            %ul.footer-links
+                Contact Us
               %li
-                %a{:href => "#"} GitHub
+                Site Map
               %li
-                %a{:href => "#"} Facebook
-              %li
-              %ul
+              -if is_admin?
+                = link_to "Logout", destroy_user_session_path, method: :delete
+              -else
+                = link_to "Login", new_user_session_path

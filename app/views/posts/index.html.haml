@@ -1,0 +1,18 @@
+- if is_admin?
+  .row
+    .large-6.columns
+      = link_to "New Post", new_post_path
+.row
+  .large-6.columns.blog-index-title
+    %h1 Blog
+
+
+- @posts.each do |post|
+  .row
+    .large-12.columns
+      %h2
+        = link_to post.title, post
+      %p
+        = post.content.html_safe
+      %hr
+

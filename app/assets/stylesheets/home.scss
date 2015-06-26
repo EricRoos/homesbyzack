@@ -1,52 +1,96 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.full-width {
-  max-width: 1400px;
+body{
+  //background-color: rgba(190, 232, 255, 0.11);
 }
+.topBar{
+  background-color: rgba(241, 241, 241, 0.48);
+  padding: .5em;
+  border-bottom: 1px solid rgba(0,0,0,.75);
+  margin-bottom:2em;
+  a{
+    color: black;
+  }
+  a:hover{
+    color: #ccbc1d;
+    text-decoration: underline;
+  }
+  a:visited{
+    color:black;
+  }
+  .top-logo{
+    height: 75px;
+  } 
+  h1{
+    display:inline;
+    line-height:75px;
+    font-size: rem-calc(32);
+  } 
+  div{
+    line-height:75px;
+  }
+  .smallNav{
+    text-align: right;
+  }
+  .dropdownIcon{
+    color:rgba(0,0,0,.75);
+  }
+}
+.navSection{
+  height:75px;
+  line-height:75px;
+  ul.nav{
+    margin: 0;
+    height:inherit;
+    line-height:inherit;
+    li.navItem{
+      font-size: rem-calc(16);
+      text-align:center;
+      display: inline-block;
+      min-width:100px;      
+    }
+  }
+}
+.slider{
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.25);
+  @media(min-width: 320px){  
+    height:250px;
+  }
 
-$text-color: #fff;
+  @media(min-width: 520px){  
+    height:480px;
+  }
 
-// footer CSS
-
-.footer {
-  background-color: #2980b9;
-  padding: 2rem 4rem;
+}
+.mainContent{
+  padding-left:3em;
+  padding-right:1em;
+  p{
+    line-height: 2em;
+  }
+}
+footer{
+  border-top: 1px solid black;
+  padding: 2em;
   text-align: center;
-  color: $text-color;
-  i {
-    font-size: 100px;
+  background-color: rgba(241, 241, 241, 0.48);
+  color:rgba(0,0,0,.75);
+  img{
+    height: 75px;
   }
-}
-
-.footer {
-  h4 {
-    color: $text-color;
-    font-size: 1em;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-top: 2.5rem;
-    margin-bottom: 10px;
+  ul{
+    margin: 0;
+    li{
+      display: inline;
+    }
   }
-  p, a {
-    font-weight: 300; 
-    font-size: .8em;
-    color: $text-color;
-  }
-}
-
-@media only screen and (min-width: 40.063em) {
-.footer {
-  .columns:nth-child(n+2) {
-    border-left: 1px solid scale-color($text-color, $lightness: -30%);
-    min-height: 280px;
-  }
- }
-}
-
-.footer-links {
-  list-style-type: none;
-  li {
-    margin-top: .5em;
+  ul.nav{
+    li{
+      display: block;
+    }
   }
 }

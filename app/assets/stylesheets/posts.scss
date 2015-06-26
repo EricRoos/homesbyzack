@@ -1,0 +1,22 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.blog-index-title{
+  height:100px;
+  h1{
+    display: inline;
+  }
+  span{
+    font-size: xx-large;
+  }
+
+}
+.published-status{
+  i.active{
+    color: green;
+  } 
+  i.inactive{
+    color: red;
+  }
+}

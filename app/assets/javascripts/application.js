@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require slick.js/slick/slick.js
+//= require trumbowyg/dist/trumbowyg.min.js
 //= require_tree .
 
 $(function(){ $(document).foundation(); });

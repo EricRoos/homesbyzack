@@ -5,7 +5,7 @@
 # On OS X with Homebrew:
 #   gem install pg -- --with-pg-config=/usr/local/bin/pg_config
 # On OS X with MacPorts:
-#   gem install pg -- --with-pg-config=/opt/local/lib/postgresql84/bin/pg_config
+#   gem install pg -- --with-pg-config=/opt/local/lib/mysql284/bin/pg_config
 # On Windows:
 #   gem install pg
 #       Choose the win32 build.
@@ -14,19 +14,14 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  # For details on connection pooling, see rails configuration guide
-  # http://guides.rubyonrails.org/configuring.html#database-pooling
+development:
+  adapter: mysql2
+  encoding: utf8
   pool: 5
   host: localhost
-  username: rails
-  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
-
-development:
-  <<: *default
-  database: app_development
+  username: root
+  password: 
+  database: homesbyzack_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -47,7 +42,7 @@ development:
   #port: 5432
 
   # Schema search path. The server defaults to $user,public
-  #schema_search_path: myapp,sharedapp,public
+  #schema_search_path: myhomesbyzack,sharedhomesbyzack,public
 
   # Minimum log levels, in increasing order:
   #   debug5, debug4, debug3, debug2, debug1,
@@ -59,15 +54,20 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
-  database: app_test
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  host: localhost
+  database: homesbyzack_test
+  username: root
+  password: 
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
 #
 # Instead, provide the password as a unix environment variable when you boot
-# the app. Read http://guides.rubyonrails.org/configuring.html#configuring-a-database
+# the homesbyzack. Read http://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full rundown on how to provide these environment variables in a
 # production deployment.
 #
@@ -82,7 +82,10 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: app_production
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  host: localhost
+  database: homesbyzack_production
   username: rails
   password: <%= ENV['APP_DATABASE_PASSWORD'] %>

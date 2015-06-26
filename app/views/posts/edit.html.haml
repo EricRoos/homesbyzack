@@ -1,0 +1,11 @@
+.row
+  .large-12.columns
+    %h1 Editing post
+
+= render 'form'
+
+.row
+  .large-12.columns
+    = link_to 'Show', @post
+    \|
+    = link_to 'Back', posts_path

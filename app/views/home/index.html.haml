@@ -1,4 +1,51 @@
+:javascript
+  $(document).ready(function(){
+    $('.autoplay').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+    $(".autoplay").removeClass("hide");
+  });
+
 .row
-  .large-4.large-centered.columns.text-center
-    %h1 Praxis Homes
-    %h2 By Zack
+  .large-6.columns.autoplay.hide.panel.text-center.slider
+    %div
+      %img(src='http://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2011/7/13/0/RMS_njhaus-modern-marble-dark-wood-kitchen_s4x3.jpg.rend.hgtvcom.1280.960.jpeg')
+      %p
+        %h3
+          Making your dreams come true
+    %div
+      %img(src='http://media.merchantcircle.com/14877851/Bathroom%20Remodel_full.jpeg') 
+      %p
+        %h3
+          Qualified and experienced team
+
+    %div
+      %img(src='http://yorba-linda-kitchenremodel.com/wp-content/uploads/2012/06/complete-house-renovation-3.jpg')
+      %p
+        %h3
+          Serving North Dallas
+    %div
+      %img(src='http://bedroomsidea.com/wp-content/uploads/2014/03/house-remodeling-ideas-6.jpg')
+      %p
+        %h3
+          Bring elegance to your home
+  .large-6.columns.mainContent
+    %h2 Headline
+    %p
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis placerat massa, vitae pulvinar nibh congue ac. Mauris arcu metus, maximus sit amet eros eu, mattis molestie mauris. Morbi tristique.
+
+    %h2 Headline
+    %p
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mattis placerat massa, vitae pulvinar nibh congue ac. Mauris arcu metus, maximus sit amet eros eu, mattis molestie mauris. Morbi tristique.
+
+          
+.row
+  .large-6.large-centered.columns
+    %dl
+      %dt
+        Praxis (n.)
+      %dd
+        practice, as distinguished from theory; application or use, as of knowledge or skills.

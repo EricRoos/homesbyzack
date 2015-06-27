@@ -1,0 +1,11 @@
+= form_for @web_image, :url => web_images_path, :html => { :multipart => true } do |form|
+  .row
+    .large-6.large-centered.columns
+      = form.file_field :image
+  .row
+    .large-6.large-centered.columns
+      = form.label :caption
+      = form.text_field :caption
+  .row
+    .large-6.large-centered.columns
+      = form.submit

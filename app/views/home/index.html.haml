@@ -11,27 +11,12 @@
 
 .row
   .large-6.columns.autoplay.hide.panel.text-center.slider
-    %div
-      %img(src='http://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2011/7/13/0/RMS_njhaus-modern-marble-dark-wood-kitchen_s4x3.jpg.rend.hgtvcom.1280.960.jpeg')
-      %p
-        %h3
-          Making your dreams come true
-    %div
-      %img(src='http://media.merchantcircle.com/14877851/Bathroom%20Remodel_full.jpeg') 
-      %p
-        %h3
-          Qualified and experienced team
+    - @images.each do |web_image|
+      %div
+        %img(src="#{web_image.image.url(:medium)}")
+        %p
+          %h3= web_image.caption
 
-    %div
-      %img(src='http://yorba-linda-kitchenremodel.com/wp-content/uploads/2012/06/complete-house-renovation-3.jpg')
-      %p
-        %h3
-          Serving North Dallas
-    %div
-      %img(src='http://bedroomsidea.com/wp-content/uploads/2014/03/house-remodeling-ideas-6.jpg')
-      %p
-        %h3
-          Bring elegance to your home
   .large-6.columns.mainContent
     %h2 Headline
     %p

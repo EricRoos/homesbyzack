@@ -61,19 +61,6 @@ body{
     margin-right:auto;
     margin-left:auto;
   }
-  @media(min-width: 320px){  
-    height:300px;
-    img{
-      height: 200px;
-    }
-  }
-
-  @media(min-width: 520px){  
-    height:580px;
-    img{
-      height: 480px
-    }
-  }
 
 }
 .mainContent{

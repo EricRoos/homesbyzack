@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150627031412) do
+ActiveRecord::Schema.define(version: 20150627052349) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "title",      limit: 255
@@ -48,6 +48,8 @@ ActiveRecord::Schema.define(version: 20150627031412) do
     t.string   "image_content_type", limit: 255
     t.integer  "image_file_size",    limit: 4
     t.datetime "image_updated_at"
+    t.string   "type",               limit: 255
+    t.string   "image_id",           limit: 255
   end
 
 end

@@ -1,0 +1,3 @@
+class FrontpageSliderImage < WebImage
+
+end

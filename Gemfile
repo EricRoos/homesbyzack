@@ -12,6 +12,7 @@ gem 'foundation-rails'
 gem 'bower-rails'
 gem 'font-awesome-rails'
 gem 'paperclip'
+gem 'trumbowyg_rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

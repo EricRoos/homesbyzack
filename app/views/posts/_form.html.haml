@@ -1,6 +1,30 @@
 :javascript
+  var setSaveStatus = function(save_status){
+    $(".save-status").html(save_status);
+  }
+
+  var savePost = function(){
+    $.ajax({
+      url: "#{post_path(@post)}",
+      dataType: "json",
+      method: "#{action_name == "new" ? "POST" : "PUT"}",
+      data: { post: { title: $("#post_title").val(), content: $("#post_content").val() } },
+      beforeSend: function(){
+       setSaveStatus("Saving"); 
+      },
+      success: function(data){
+        setTimeout(function(){
+          setSaveStatus("Saved");
+        },2000);
+      }
+    });
+  }
   $(document).ready(function(){
     $("#post_content").trumbowyg();
+    $(".save-button").on("click",function(){
+      savePost();
+    });
+    setTimeout(savePost,30000);
   });
 = form_for @post do |f|
   - if @post.errors.any?
@@ -14,6 +38,10 @@
       .field
         = f.label :title
         = f.text_field :title
+    .large-7.columns.text-right
+      .save-status
+    .large-1.columns.text-right
+      = fa_icon "save 2x", class: "save-button"
   .row
     .large-12.columns
       .field

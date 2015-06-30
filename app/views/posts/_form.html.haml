@@ -15,6 +15,9 @@
       success: function(data){
         setTimeout(function(){
           setSaveStatus("Saved");
+          setTimeout(function(){
+            setSaveStatus("");
+          },5000);
         },2000);
       }
     });
@@ -24,7 +27,7 @@
     $(".save-button").on("click",function(){
       savePost();
     });
-    setTimeout(savePost,30000);
+    setInterval(savePost,30000);
   });
 = form_for @post do |f|
   - if @post.errors.any?

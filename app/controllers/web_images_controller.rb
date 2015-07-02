@@ -4,7 +4,7 @@ class WebImagesController < ApplicationController
   end
 
   def index
-    @web_images = FrontPageSlider.all
+    @images= FrontpageSliderImage.all
   end
 
   def create

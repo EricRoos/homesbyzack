@@ -1,8 +1,35 @@
-%table
-  - @images.each do |img|
-    %tr
-      %td
-        %img(src="#{ img.image.url(:small)}")
-      %td= img.caption
+:javascript
+  $(document).ready(function(){
+    $(".modalOpener").on("click",function(){
+      console.log(this);
+      $("#updateImgDisplay").attr("src",$(this).data("img-url"));
+      $("#updateImgCaption").val($(this).data("caption"));
+      $("#updateSliderImageModal").foundation("reveal","open");
+    });
+  });
+.row
+  .new-slider-image
+    %span.new-button
+      = fa_icon "plus"
+      New Image
+.row
+  %ul.small-block-grid-2.medium-block-grid-5
+    - @images.each do |img|
+      %li
+        %a.modalOpener{data: {img_url: img.image.url(:medium), caption: img.caption, img_id: img.id }}
+          = image_tag img.image.url(:medium)
 
-  
+#updateSliderImageModal.reveal-modal.small{data: {reveal: true} }
+  .text-center
+    .row
+      %img#updateImgDisplay
+    .row
+      %p
+        %input#updateImgCaption
+    .row
+      .button
+        Save
+  %a.close-reveal-modal{"aria-label" => "Close"} ×
+    
+
+      

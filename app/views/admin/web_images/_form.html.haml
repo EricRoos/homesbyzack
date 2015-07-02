@@ -1,4 +1,5 @@
-= form_for @web_image, :url => web_images_path, :html => { :multipart => true } do |form|
+- @web_image ||= FrontpageSliderImage.new
+= form_for @web_image, :url => admin_web_images_path, :html => { :multipart => true } do |form|
   .row
     .large-6.large-centered.columns
       = form.file_field :image
@@ -8,4 +9,4 @@
       = form.text_field :caption
   .row
     .large-6.large-centered.columns
-      = form.submit
+      = form.submit class: "button expand"

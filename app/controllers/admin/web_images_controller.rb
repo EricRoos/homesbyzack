@@ -1,4 +1,4 @@
-class WebImagesController < ApplicationController
+class Admin::WebImagesController < Admin::AdminController
   def new
     @web_image = FrontpageSliderImage.new
   end
@@ -9,9 +9,7 @@ class WebImagesController < ApplicationController
 
   def create
     @web_image = FrontpageSliderImage.create web_image_params
-
-    redirect_to web_image_path(@web_image)
-
+    redirect_to admin_web_images_path
   end
 
   def show

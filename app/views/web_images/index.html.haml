@@ -1,0 +1,8 @@
+%table
+  - @images.each do |img|
+    %tr
+      %td
+        %img(src="#{ img.image.url(:small)}")
+      %td= img.caption
+
+  

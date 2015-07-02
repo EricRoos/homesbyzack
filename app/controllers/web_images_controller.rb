@@ -3,6 +3,10 @@ class WebImagesController < ApplicationController
     @web_image = FrontpageSliderImage.new
   end
 
+  def index
+    @web_images = FrontPageSlider.all
+  end
+
   def create
     @web_image = FrontpageSliderImage.create web_image_params
 

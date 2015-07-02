@@ -1,0 +1,134 @@
+/* line 7, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.topBar {
+  background-color: rgba(241, 241, 241, 0.48);
+  padding: .5em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+  margin-bottom: 2em;
+}
+/* line 13, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.topBar a {
+  color: black;
+}
+/* line 16, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.topBar a:hover {
+  color: black;
+  text-decoration: underline;
+}
+/* line 20, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.topBar a:visited {
+  color: black;
+}
+/* line 23, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.topBar .top-logo {
+  height: 75px;
+}
+/* line 27, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.topBar h1 {
+  display: inline;
+  line-height: 75px;
+  font-size: rem-calc(32);
+}
+/* line 32, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.topBar div {
+  line-height: 75px;
+}
+/* line 35, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.topBar .smallNav {
+  text-align: right;
+}
+/* line 38, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.topBar .dropdownIcon {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+/* line 42, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.navSection {
+  height: 75px;
+  line-height: 75px;
+}
+/* line 45, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.navSection ul.nav {
+  margin: 0;
+  height: inherit;
+  line-height: inherit;
+}
+/* line 49, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.navSection ul.nav li.navItem {
+  font-size: rem-calc(16);
+  text-align: center;
+  display: inline-block;
+  min-width: 100px;
+}
+
+/* line 57, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.slider {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.25);
+}
+/* line 62, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.slider img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 68, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.mainContent {
+  padding-left: 3em;
+  padding-right: 1em;
+}
+/* line 71, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.mainContent p {
+  line-height: 2em;
+}
+
+/* line 76, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+.slick-slide h3 {
+  color: #4F747F;
+}
+
+/* line 80, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+footer {
+  border-top: 1px solid black;
+  padding: 2em;
+  text-align: center;
+  background-color: rgba(241, 241, 241, 0.48);
+  color: rgba(0, 0, 0, 0.75);
+}
+/* line 86, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+footer img {
+  height: 75px;
+}
+/* line 89, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+footer ul {
+  margin: 0;
+}
+/* line 91, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+footer ul li {
+  display: inline;
+}
+/* line 96, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+footer ul.nav li {
+  display: block;
+}
+/* line 100, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+footer a {
+  color: black;
+}
+/* line 103, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+footer .fb-icon {
+  color: #3b5998;
+}
+/* line 106, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+footer .twitter-icon {
+  color: #55acee;
+}
+/* line 109, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+footer .pinterest-icon {
+  color: #c92228;
+}
+/* line 112, /home/rails/homesbyzack/app/assets/stylesheets/home.scss */
+footer .instagram-icon {
+  color: rgba(0, 0, 0, 0.7);
+}

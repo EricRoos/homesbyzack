@@ -1522,3 +1522,22 @@ ActionController::RoutingError (No route matches [GET] "/wp-login.php"):
   /usr/local/rvm/gems/ruby-2.2.1@global/bin/ruby_executable_hooks:15:in `<main>'
 
 
+I, [2015-07-02T00:49:41.303715 #27040]  INFO -- : Started GET "/" for 192.136.224.129 at 2015-07-02 00:49:41 -0400
+I, [2015-07-02T00:49:41.339477 #27040]  INFO -- : Processing by HomeController#index as HTML
+D, [2015-07-02T00:49:41.375762 #27040] DEBUG -- :   [1m[36mFrontpageSliderImage Load (0.4ms)[0m  [1mSELECT  `web_images`.* FROM `web_images`  ORDER BY `web_images`.`id` ASC LIMIT 10[0m
+I, [2015-07-02T00:49:41.432810 #27040]  INFO -- :   Rendered home/index.html.haml within layouts/application (20.6ms)
+I, [2015-07-02T00:49:41.466868 #27040]  INFO -- : Completed 200 OK in 127ms (Views: 61.0ms | ActiveRecord: 11.4ms)
+I, [2015-07-02T00:51:13.139485 #27040]  INFO -- : Started GET "/web_images" for 192.136.224.129 at 2015-07-02 00:51:13 -0400
+I, [2015-07-02T00:51:13.178322 #27040]  INFO -- : Processing by WebImagesController#index as HTML
+I, [2015-07-02T00:51:13.206815 #27040]  INFO -- :   Rendered web_images/index.html.haml within layouts/application (11.4ms)
+I, [2015-07-02T00:51:13.208013 #27040]  INFO -- : Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+F, [2015-07-02T00:51:13.213613 #27040] FATAL -- : 
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: %table
+    2:   - @images.each do |img|
+    3:     %tr
+    4:       %td
+    5:         %img(src="#{ img.image.url(:small)}")
+  app/views/web_images/index.html.haml:2:in `_app_views_web_images_index_html_haml__4252864807020987541_34248900'
+
+

@@ -9,19 +9,21 @@ body{
   padding: .5em;
   border-bottom: 1px solid rgba(0,0,0,.75);
   margin-bottom:2em;
+  
   a{
     color: black;
   }
   a:hover{
-    color: #ccbc1d;
+    color: black;
     text-decoration: underline;
   }
   a:visited{
-    color:black;
+    color: black;
   }
   .top-logo{
     height: 75px;
   } 
+
   h1{
     display:inline;
     line-height:75px;
@@ -89,5 +91,20 @@ footer{
     li{
       display: block;
     }
+  }
+  a{
+    color:black;
+  }
+  .fb-icon{
+    color: rgb(59,89,152);
+  }
+  .twitter-icon{
+    color: rgb(85,172,238);
+  }
+  .pinterest-icon{
+    color: rgb(201,34,40);
+  }
+  .instagram-icon{
+    color: rgba(0,0,0,.70);
   }
 }

@@ -13,7 +13,7 @@
         = link_to root_path do
           = image_tag "textlogo.png", class: "top-logo"
 
-      .medium-7.small-6.large-6.columns.text-right.navSection.show-for-medium-up
+      .medium-7.small-6.large-6.columns.text-right.navSection.show-for-large-up
         %ul.nav
           %li.navItem
             =link_to "Blog",posts_path 
@@ -23,7 +23,7 @@
             About Us
           %li.navItem
             Contact Us
-      .small-4.columns.show-for-small-only.smallNav
+      .small-4.columns.hide-for-large-up.smallNav
         %a.dropdownIcon{"aria-controls" => "drop1", "aria-expanded" => "false", "data-dropdown" => "drop1"}
           = fa_icon "navicon lg"
         %ul#drop1.f-dropdown{"aria-hidden" => "true", "data-dropdown-content" => "", :tabindex => "-1"}
@@ -43,11 +43,11 @@
           .large-4.columns.text-center
             %h4 Connect with us:
             %ul
-              %li= fa_icon "facebook 2x fw"
-              %li= fa_icon "twitter 2x fw"
+              %l.fb-icon= fa_icon "facebook 2x fw"
+              %li.twitter-icon= fa_icon "twitter 2x fw"
               %br
-              %li= fa_icon "pinterest 2x fw"
-              %li= fa_icon "instagram 2x fw"
+              %li.pinterest-icon= fa_icon "pinterest 2x fw"
+              %li.instagram-icon= fa_icon "instagram 2x fw"
           .large-4.columns.text-center
             %p 
               =image_tag "logo.png"

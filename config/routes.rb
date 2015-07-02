@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get 'home/index'
 
+  get 'admin', to: "admin/admin#index"
   namespace :admin do
     resources :web_images
   end

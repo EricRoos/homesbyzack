@@ -7,6 +7,16 @@ class Admin::WebImagesController < Admin::AdminController
     @images= FrontpageSliderImage.all
   end
 
+  def destroy
+    @web_image = FrontpageSliderImage.find(params[:id])
+    @web_image.destroy
+
+    respond_to do |format|
+      format.json {render json: {status: "ok"}}
+    end
+
+  end
+
   def create
     @web_image = FrontpageSliderImage.create web_image_params
     redirect_to admin_web_images_path

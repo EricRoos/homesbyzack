@@ -1,15 +1,34 @@
 :javascript
   $(document).ready(function(){
     $(".editModalOpener").on("click",function(){
-      console.log(this);
       $("#updateImgDisplay").attr("src",$(this).data("img-url"));
       $("#updateImgCaption").val($(this).data("caption"));
+      $("#delete-image-button").data("delete-href",$(this).data("data-url"));
       $("#updateSliderImageModal").foundation("reveal","open");
     });
+
+    $("#delete-image-button").on("click",function(){
+      var url = $(this).data("delete-href");
+      r = confirm("Are you sure you want to delete this picture, it cannot be undone");
+      if(r){
+        $.ajax({
+          url: url,
+          type: "DELETE",
+          dataType: "json",
+          success: function(){
+            console.log("finished deleting");
+            window.location.reload();
+          }
+        });
+      }
+    });
+
     $(".new-button").on("click", function(){
       $("#newSliderImageModal").foundation("reveal","open");
     });
   });
+.row
+  =link_to "Back", admin_path
 .row
   .new-slider-image
     %span.new-button
@@ -19,7 +38,7 @@
   %ul.small-block-grid-2.medium-block-grid-5
     - @images.each do |img|
       %li
-        %a.editModalOpener{data: {img_url: img.image.url(:medium), caption: img.caption, img_id: img.id }}
+        %a.editModalOpener(href="#"){data: {img_url: img.image.url(:medium), caption: img.caption, img_id: img.id, data_url: admin_web_image_path(img) }}
           = image_tag img.image.url(:medium)
 
 #updateSliderImageModal.reveal-modal{data: {reveal: true} }
@@ -32,6 +51,8 @@
     .row
       .button
         Save
+      %a.button.alert#delete-image-button
+        Delete
   %a.close-reveal-modal{"aria-label" => "Close"} ×
     
 #newSliderImageModal.reveal-modal{data: {reveal: true} }

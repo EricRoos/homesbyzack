@@ -1,3 +1,4 @@
+git pull origin master
 rake assets:clean
 rm -rf public/assets/*
 rake assets:precompile

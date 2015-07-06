@@ -13,7 +13,8 @@
   .large-6.columns.autoplay.hide.panel.text-center.slider
     - @images.each do |web_image|
       %div
-        %img(src="#{web_image.image.url(:medium)}")
+        .slider-image
+          %img(src="#{web_image.image.url(:medium)}")
         %p
           %h3= web_image.caption
 

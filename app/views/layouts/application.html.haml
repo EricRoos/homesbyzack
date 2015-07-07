@@ -43,8 +43,12 @@
           .large-4.columns.text-center
             %h4 Connect with us:
             %ul
-              %l.fb-icon= fa_icon "facebook 2x fw"
-              %li.twitter-icon= fa_icon "twitter 2x fw"
+              %li.fb-icon
+                =  link_to "https://facebook.com/praxishomestx" do 
+                  = fa_icon("facebook 2x fw")
+              %li.twitter-icon
+                =  link_to "https://twitter.com/praxishomes" do 
+                  =  fa_icon "twitter 2x fw"
               %br
               %li.pinterest-icon= fa_icon "pinterest 2x fw"
               %li.instagram-icon= fa_icon "instagram 2x fw"

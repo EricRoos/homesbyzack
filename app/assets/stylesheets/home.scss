@@ -80,6 +80,14 @@ body{
     color: #4F747F;
   }
 }
+.praxis-definition-container{
+  padding: 1em;
+  font-size: 1.2em;
+  .definition-title{
+    font-size: 1.5em;
+    color: #4F747F;
+  }
+}
 footer{
   border-top: 1px solid black;
   padding: 2em;
@@ -104,13 +112,19 @@ footer{
     color:black;
   }
   .fb-icon{
-    color: rgb(59,89,152);
+    a{
+      color: rgb(59,89,152);
+    }
   }
   .twitter-icon{
-    color: rgb(85,172,238);
+    a{
+      color: rgb(85,172,238);
+    }
   }
   .pinterest-icon{
-    color: rgb(201,34,40);
+    a{
+      color: rgb(201,34,40);
+    } 
   }
   .instagram-icon{
     color: rgba(0,0,0,.70);

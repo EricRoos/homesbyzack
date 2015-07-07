@@ -9,7 +9,7 @@
     = csrf_meta_tags
   %body
     .row.topBar
-      .large-6.medium-5.small-8.columns.text-center
+      .large-6.medium-10.small-8.columns.text-center
         = link_to root_path do
           = image_tag "textlogo.png", class: "top-logo"
 
@@ -23,7 +23,7 @@
             About Us
           %li.navItem
             Contact Us
-      .small-4.columns.hide-for-large-up.smallNav
+      .small-4.medium-1.columns.hide-for-large-up.smallNav
         %a.dropdownIcon{"aria-controls" => "drop1", "aria-expanded" => "false", "data-dropdown" => "drop1"}
           = fa_icon "navicon lg"
         %ul#drop1.f-dropdown{"aria-hidden" => "true", "data-dropdown-content" => "", :tabindex => "-1"}
@@ -38,43 +38,41 @@
 
     = yield
     %footer.row
-      .large-12.columns
-        .row
-          .large-4.columns.text-center
-            %h4 Connect with us:
-            %ul
-              %li.fb-icon
-                =  link_to "https://facebook.com/praxishomestx" do 
-                  = fa_icon("facebook 2x fw")
-              %li.twitter-icon
-                =  link_to "https://twitter.com/praxishomes" do 
-                  =  fa_icon "twitter 2x fw"
-              %br
-              %li.pinterest-icon= fa_icon "pinterest 2x fw"
-              %li.instagram-icon= fa_icon "instagram 2x fw"
-          .large-4.columns.text-center
-            %p 
-              =image_tag "logo.png"
-            %p 
-              Phone: +1 (903) 641-1510<br/>
-              Email: zack@praxishomestx.com
-          .large-4.columns.text-center
-            %h4 Navigation
-            %ul.nav
-              %li
-                Home
-              %li
-                Blog Archive
-              %li
-                Contact Us
-              %li
-                Site Map
-              %li
-              
-              -if is_admin?
-                = link_to "Logout", destroy_user_session_path, method: :delete
-              -else
-                = link_to "Login", new_user_session_path
-              -if is_admin?
-                %li
-                  =link_to "Admin", admin_path
+      .large-4.columns.text-center
+        %h4 Connect with us:
+        %ul
+          %li.fb-icon
+            =  link_to "https://facebook.com/praxishomestx" do 
+              = fa_icon("facebook 2x fw")
+          %li.twitter-icon
+            =  link_to "https://twitter.com/praxishomes" do 
+              =  fa_icon "twitter 2x fw"
+          %br
+          %li.pinterest-icon= fa_icon "pinterest 2x fw"
+          %li.instagram-icon= fa_icon "instagram 2x fw"
+      .large-4.columns.text-center
+        %p 
+          =image_tag "logo.png"
+        %p 
+          Phone: +1 (903) 641-1510<br/>
+          Email: zack@praxishomestx.com
+      .large-4.columns.text-center
+        %h4 Navigation
+        %ul.nav
+          %li
+            Home
+          %li
+            Blog Archive
+          %li
+            Contact Us
+          %li
+            Site Map
+          %li
+          
+          -if is_admin?
+            = link_to "Logout", destroy_user_session_path, method: :delete
+          -else
+            = link_to "Login", new_user_session_path
+          -if is_admin?
+            %li
+              =link_to "Admin", admin_path

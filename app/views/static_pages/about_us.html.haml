@@ -1,2 +1,66 @@
-%h1 StaticPages#about_us
-%p Find me in app/views/static_pages/about_us.html.haml
+/ this adds Foundation Icon Fonts!!
+.row
+  .small-12
+    %h1 What is Praxis Homes
+
+    %h2 Our Mission
+    %p
+      Cras bibendum, ipsum in convallis commodo, lorem mi porta erat, quis dignissim leo tellus in augue. Maecenas lobortis id sapien finibus tempor. Vestibulum ultricies velit placerat scelerisque dictum. Curabitur pulvinar mauris mi, nec gravida urna aliquet sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque iaculis nisl sed tincidunt. Cras lacus eros, auctor gravida auctor a, ullamcorper eu ligula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin purus sem, elementum nec dapibus non, lacinia vitae enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam felis nulla, auctor vitae justo et, ullamcorper accumsan quam. Pellentesque gravida facilisis dictum. Etiam elementum fermentum orci vel faucibus.
+
+    %h2 About Praxis Homes
+    %p
+      Cras bibendum, ipsum in convallis commodo, lorem mi porta erat, quis dignissim leo tellus in augue. Maecenas lobortis id sapien finibus tempor. Vestibulum ultricies velit placerat scelerisque dictum. Curabitur pulvinar mauris mi, nec gravida urna aliquet sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque iaculis nisl sed tincidunt. Cras lacus eros, auctor gravida auctor a, ullamcorper eu ligula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin purus sem, elementum nec dapibus non, lacinia vitae enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam felis nulla, auctor vitae justo et, ullamcorper accumsan quam. Pellentesque gravida facilisis dictum. Etiam elementum fermentum orci vel faucibus.
+.row
+  .small-12.text-center
+    %h1
+      Our Team
+    %p.text-center
+      %img(src="http://placehold.it/800x450")
+%link{:href => "http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css", :rel => "stylesheet"}/
+.row{:data => {:equalizer => true} }
+  .medium-5.medium-offset-1.columns
+    .profile-card{:data => {"equalizer-watch" => true}}
+      %img{:alt => "Inky", :src => "http://zurb.com/ink/images/inky-computer.svg"}/
+      .profile-info
+        %h4.subheader Zack Thomas
+        %p Founder &amp; General Manager
+        %p.bio
+          %strong Used in a scentence -
+          Yo man, Foundation for Emails is so inky. Coding emails doesn't suck anymore!
+        %p
+          %a{:href => "http://foundation.zurb.com/forum"} Forum
+          |
+          %a{:href => "http://zurb.com/ink/"} Website
+        %ul.inline-list
+          %li
+            %a{:href => "https://www.facebook.com/ZURB"}
+              %i.fi-social-facebook
+          %li
+            %a{:href => "https://twitter.com/zurbink"}
+              %i.fi-social-twitter
+          %li
+            %a{:href => "https://github.com/zurb/ink"}
+              %i.fi-social-github
+  .medium-5.columns.end
+    .profile-card{:data => {"equalizer-watch" => true} }
+      %img{:alt => "Yeti", :src => "http://www.demacmedia.com/wp-content/uploads/2014/04/330x330xYeti-Feature-Small-2.png.pagespeed.ic.ASS9EY8apS.png"}/
+      .profile-info
+        %h4.subheader Sandra Randall
+        %p Project Manager
+        %p.bio
+          %strong> Used in a scentence -
+          those tru gangstas from way back in the day that jacked ya and left nothing but you boxers and socks. Also, Biggie and Tupac were both O.G.'s
+        %p
+          %a{:href => "http://foundation.zurb.com/forum"} Forum
+          |
+          %a{:href => "http://foundation.zurb.com/"} Website
+        %ul.inline-list
+          %li
+            %a{:href => "https://www.facebook.com/ZURB"}
+              %i.fi-social-facebook
+          %li
+            %a{:href => "https://twitter.com/ZURBfoundation"}
+              %i.fi-social-twitter
+          %li
+            %a{:href => "https://github.com/zurb/foundation"}
+              %i.fi-social-github

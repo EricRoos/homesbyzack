@@ -9,11 +9,11 @@
     = csrf_meta_tags
   %body
     .row.topBar
-      .large-6.medium-10.small-8.columns.text-center
+      .large-6.medium-6.small-8.columns.text-center
         = link_to root_path do
           = image_tag "textlogo.png", class: "top-logo"
 
-      .medium-7.small-6.large-6.columns.text-right.navSection.show-for-large-up
+      .medium-6.small-6.large-6.columns.text-right.navSection.show-for-medium-up
         %ul.nav
           %li.navItem
             =link_to "Blog",posts_path 
@@ -23,7 +23,7 @@
             About Us
           %li.navItem
             = link_to "Contact Us", "/contact_us"
-      .small-4.medium-1.columns.hide-for-large-up.smallNav
+      .small-4.medium-1.columns.hide-for-medium-up.smallNav
         %a.dropdownIcon{"aria-controls" => "drop1", "aria-expanded" => "false", "data-dropdown" => "drop1"}
           = fa_icon "navicon lg"
         %ul#drop1.f-dropdown{"aria-hidden" => "true", "data-dropdown-content" => "", :tabindex => "-1"}

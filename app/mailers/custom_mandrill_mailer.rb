@@ -8,6 +8,7 @@ class CustomMandrillMailer < MandrillMailer::TemplateMailer
       subject: "#{email} has sent you a message",
       to: "zack@praxishomestx.com",
       vars: {
+        'NAME' => name,
         'EMAIL' =>  email,
         'MESSAGE' => message
       },

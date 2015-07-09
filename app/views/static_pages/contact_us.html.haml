@@ -1,0 +1,50 @@
+.row
+  .small-12.columns
+    %h1 Contact Us
+= form_tag "/contact_us", :method=> :post do
+  .row
+    .small-6.columns
+      .row
+        .small-12.columns
+          %label
+            Name
+            %input(type="text"){ :placeholder => "Name", :name => "name" }
+      .row
+        .small-12.columns
+          %label
+            Email
+            %input(type="email"){ :placeholder => "Email", :name => "email" }
+      .row
+        .small-12.columns
+          %label
+            Message
+            %textarea(rows=10){:name => "message"}
+      .row
+        .small-4.small-centered.columns
+          %input.button(type="submit")
+    .small-6.columns.text-center
+      .row
+        %p
+          Zackery Thomas<br/>
+          %a(href="mailto:zack@praxishomestx.com") zack@praxishomestx.com <br/>
+          +1 (903) 641-1510
+      .row
+        .small-6.small-centered.columns
+          %p.text-center 
+            %ul.small-block-grid-4
+              %li.fb-icon
+                =  link_to "https://facebook.com/praxishomestx" do 
+                  = fa_icon("facebook 2x fw")
+              %li.twitter-icon
+                =  link_to "https://twitter.com/praxishomes" do 
+                  =  fa_icon "twitter 2x fw"
+              %li.pinterest-icon
+                %a(href="#")
+                  = fa_icon "pinterest 2x fw"
+              %li.instagram-icon
+                %a(href="#")
+                  = fa_icon "instagram 2x fw"
+      .row
+        .small-6.small-centered.columns
+          %p
+            Feel free to contact us with any questions or business inquiries.

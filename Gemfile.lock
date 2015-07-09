@@ -70,6 +70,7 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     erubis (2.7.0)
+    excon (0.45.3)
     execjs (2.5.2)
     font-awesome-rails (4.3.0.0)
       railties (>= 3.2, < 5.0)
@@ -108,6 +109,13 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    mandrill-api (1.0.51)
+      excon (>= 0.16.0, < 1.0)
+      json (>= 1.7.7, < 2.0)
+    mandrill_mailer (0.4.6)
+      actionpack
+      activesupport
+      mandrill-api (~> 1.0.9)
     mime-types (2.6.1)
     mini_portile (0.6.2)
     minitest (5.7.0)
@@ -217,6 +225,7 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
+  mandrill_mailer
   mysql2
   paperclip
   rails (= 4.2.1)

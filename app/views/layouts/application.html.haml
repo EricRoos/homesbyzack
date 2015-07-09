@@ -36,6 +36,11 @@
           %li
             %a{:href => "#"} Contact Us
 
+    - if flash[:info]
+      .row
+        .small-12.small-centered.alert-box.info.round{:data => {:alert => true}}
+          = flash[:info]
+          %a.close(href="#") &times;
     = yield
     %footer.row
       .large-4.columns.text-center

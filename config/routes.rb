@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  get '/services', to: "static_pages#services"
+  get '/about_us', to: "static_pages#about_us"
+  get '/contact_us', to: "static_pages#contact_us"
+  post '/contact_us', to: "static_pages#submit_contact_us"
+
   devise_for :users
   resources :posts
 

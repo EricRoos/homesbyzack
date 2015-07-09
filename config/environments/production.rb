@@ -1,4 +1,5 @@
 Rails.application.configure do
+  config.mandrill_mailer.default_url_options = { :host => 'praxishomestx.com' }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.

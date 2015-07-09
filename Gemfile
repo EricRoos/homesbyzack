@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'aws-sdk', '<2.0'
+gem 'mandrill_mailer'
 gem 'rails', '4.2.1'
 gem 'haml'
 gem 'haml-rails'
